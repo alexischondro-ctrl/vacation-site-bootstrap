@@ -1,0 +1,218 @@
+/* Custom CSS for How To Travel - Beginner Version */
+
+/* Basic color setup */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    padding-top: 76px; /* This makes space for the fixed navbar at the top */
+}
+
+/* Make the top section (hero) look nice */
+.hero-section {
+    background: #0d6efd; /* Blue color */
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%); /* Blue gradient */
+    margin-top: -76px;
+    padding-top: 120px !important;
+    color: white;
+}
+
+/* Style the website name in navigation */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Style the navigation links */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+/* Change link color when mouse hovers over them */
+.navbar-nav .nav-link:hover {
+    color: #fd7e14 !important; /* Orange color on hover */
+}
+
+/* Style the destination cards */
+.destination-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Make cards lift up when hovering */
+.destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Make card images look good */
+.card-img-top {
+    height: 200px;
+    object-fit: cover; /* This makes images fill the space nicely */
+}
+
+/* Make images zoom a bit when card is hovered */
+.destination-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Style section titles */
+.section-title {
+    color: #212529;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+/* Add a little line under section titles */
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: #0d6efd; /* Blue color */
+    border-radius: 2px;
+}
+
+/* Style the feature icons */
+.feature-icon .icon-wrapper {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Style all buttons */
+.btn {
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+}
+
+/* Blue buttons */
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+}
+
+/* Blue buttons on hover */
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Orange buttons */
+.btn-warning {
+    background-color: #fd7e14;
+    border-color: #fd7e14;
+    color: black;
+}
+
+/* Orange buttons on hover */
+.btn-warning:hover {
+    background-color: #fd9843;
+    border-color: #fd9843;
+    color: black;
+    transform: translateY(-2px);
+}
+
+/* Footer styling */
+footer {
+    background-color: #212529 !important;
+    color: white;
+}
+
+/* Footer headings */
+footer h5 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Footer links */
+footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Footer links on hover */
+footer a:hover {
+    color: #fd7e14 !important; /* Orange color */
+}
+
+/* Style alert boxes */
+.alert {
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+/* Make sure everything looks good on mobile phones */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 100px !important;
+        text-align: center;
+    }
+    
+    /* Make headings smaller on mobile */
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    /* Make the title underline shorter on mobile */
+    .section-title::after {
+        width: 60px;
+    }
+}
+
+/* Make the page scroll smoothly when clicking links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style form inputs */
+.form-control {
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+}
+
+/* Style form inputs when clicked */
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Add some simple animations */
+.destination-card,
+.btn,
+.navbar-nav .nav-link,
+footer a {
+    transition: all 0.3s ease; 
+}
+
+/* Simple hover effect for cards */
+.destination-card:hover {
+    transition: all 0.3s ease;
+}
+
+/* Simple hover effect for buttons */
+.btn:hover {
+    transition: all 0.3s ease;
+}
+
+/* Simple hover effect for navigation links */
+.navbar-nav .nav-link:hover {
+    transition: color 0.3s ease;
+}
+
+/* Simple hover effect for footer links */
+footer a:hover {
+    transition: color 0.3s ease;
+}

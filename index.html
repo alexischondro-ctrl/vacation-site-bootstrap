@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic setup for the webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="How To Travel - Discover amazing travel destinations and tips">
+    <title>How To Travel - Your Travel Guide</title>
+    
+    <!-- Link to Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Link to our custom CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar - Fixed at the top of the page -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <!-- Website logo/name -->
+            <a class="navbar-brand fw-bold" href="index.html">How To Travel</a>
+            
+            <!-- Mobile menu button  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tips.html">Travel Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - The big banner at the top -->
+    <section class="hero-section text-white py-5">
+        <div class="container text-center py-5">
+            <h1 class="display-4 mb-4 fw-bold">Your Journey Starts Here</h1>
+            <p class="lead mb-4 fs-5">Expert guides, insider tips, and unforgettable destinations</p>
+            
+            <!-- Call-to-action button -->
+            <a href="destinations.html" class="btn btn-warning btn-lg px-4 py-2 fw-bold">Explore Destinations</a>
+        </div>
+    </section>
+
+    <!-- Featured Destinations Section -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Section title -->
+            <h2 class="text-center mb-5 section-title">Featured Destinations</h2>
+            
+            <!-- Cards grid - 3 cards in a row on desktop -->
+            <div class="row g-4">
+                <!-- Card 1 - Athens, Greece -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm destination-card">
+                        <!-- Card image -->
+                        <img src="images/athens.jpg" class="card-img-top" alt="Athens, Greece">
+                        <div class="card-body">
+                            <!-- Card title -->
+                            <h5 class="card-title">Athens, Greece</h5>
+                            <!-- Card description -->
+                            <p class="card-text">Walk in the footsteps of ancient philosophers and explore the Acropolis, Parthenon, and vibrant modern Greek culture in this historic capital.</p>
+                            <!-- Card button -->
+                            <a href="destinations.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 - Tokyo, Japan -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm destination-card">
+                        <img src="images/tokyo.jpg" class="card-img-top" alt="Tokyo, Japan">
+                        <div class="card-body">
+                            <h5 class="card-title">Tokyo, Japan</h5>
+                            <p class="card-text">Experience the perfect blend of ultra-modern technology and ancient traditions in this bustling metropolis with incredible food and culture.</p>
+                            <a href="destinations.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 - Barbados, Caribbean -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm destination-card">
+                        <img src="images/beach.jpg" class="card-img-top" alt="Barbados, Caribbean">
+                        <div class="card-body">
+                            <h5 class="card-title">Barbados, Caribbean</h5>
+                            <p class="card-text">Relax on pristine white-sand beaches, swim in turquoise waters, and experience the vibrant culture of this beautiful Caribbean island.</p>
+                            <a href="destinations.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Why Choose How To Travel?</h2>
+            
+            <!-- Three feature columns -->
+            <div class="row g-4 text-center">
+                <!-- Feature 1 -->
+                <div class="col-md-4">
+                    <div class="feature-icon mb-3">
+                        <div class="icon-wrapper">📚</div>
+                    </div>
+                    <h5>Expert Guides</h5>
+                    <p>Comprehensive travel guides written by experienced travelers and locals.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="col-md-4">
+                    <div class="feature-icon mb-3">
+                        <div class="icon-wrapper">💰</div>
+                    </div>
+                    <h5>Budget Tips</h5>
+                    <p>Learn how to travel smarter and save money without sacrificing experiences.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="col-md-4">
+                    <div class="feature-icon mb-3">
+                        <div class="icon-wrapper">🌍</div>
+                    </div>
+                    <h5>Sustainable Travel</h5>
+                    <p>Responsible travel practices that support local communities and protect nature.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h3 class="mb-3">Get Travel Inspiration</h3>
+            <p class="lead mb-4">Subscribe for weekly travel tips and destination guides</p>
+            
+            <!-- Simple email form -->
+            <form class="row g-2 justify-content-center">
+                <div class="col-auto">
+                    <input type="email" class="form-control form-control-lg" placeholder="Your email address">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-warning btn-lg fw-bold">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Company info -->
+                <div class="col-md-6">
+                    <h5 class="fw-bold">How To Travel</h5>
+                    <p>Your comprehensive guide to exploring the world.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white-50 me-3">Facebook</a>
+                        <a href="#" class="text-white-50 me-3">Instagram</a>
+                        <a href="#" class="text-white-50">Twitter</a>
+                    </div>
+                </div>
+                
+                <!-- Quick links -->
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Home</a></li>
+                        <li><a href="destinations.html" class="text-white-50">Destinations</a></li>
+                        <li><a href="tips.html" class="text-white-50">Travel Tips</a></li>
+                        <li><a href="gallery.html" class="text-white-50">Gallery</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact info -->
+                <div class="col-md-3">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li>123 Travel Street</li>
+                        <li>Adventure City, AC 12345</li>
+                        <li>info@howtotravel.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <!-- Copyright -->
+            <div class="text-center">
+                <p>&copy; 2025 How To Travel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript - Needed for interactive components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
